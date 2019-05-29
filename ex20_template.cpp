@@ -23,7 +23,7 @@ struct CardGame {
         hit(c1, c2);
         hit(c2, c1);
         if(c1.health > 0 && c2.health <= 0) return creature1;
-        else if(c2.health >0 && c1.health <= 0) return creature2;
+        else if(c2.health > 0 && c1.health <= 0) return creature2;
         else return -1;
     }
     virtual void hit(Creature& attacker, Creature& other) = 0;
